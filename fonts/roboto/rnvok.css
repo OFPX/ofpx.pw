@@ -1,0 +1,218 @@
+body{
+    background: url(https://i.imgur.com/qZ3ZuaL.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: cover;
+    box-sizing:border-box;
+}
+
+
+.off-canvas-wrap{
+    -webkit-backface-visibility:inherit;
+}
+
+.inner-wrap{
+    -webkit-backface-visibility:inherit;
+}
+
+
+.imgcont{
+    position:absolute;
+    width:100%;
+    height:100vh;
+    z-index:0;
+}
+
+.title-holder{
+    position:relative;
+    display:block;
+    text-align:center;
+    margin-left:19ch;
+}
+
+.products{
+    padding:0 2.5rem;
+}
+
+.products .title{
+    font-size:2rem;
+    font-weight:100;
+    margin-top:1rem;
+}
+
+.products .title:after{
+    content:'';
+    display:inline-block;
+    width:8ch;
+    height:2px;
+    background-color:#9C27B0;
+    top:10px;
+    left:-9.5ch;
+    position:relative;
+    transition:all 0.5s ease-in-out;
+}
+
+.products .title:hover::after{
+    transform:scaleX(1.1);
+}
+
+.products .card-container{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin:2rem 0;
+}
+
+.card img{
+    border-bottom:1px solid rgba(0,0,0,0.25);
+    user-select:none;
+    pointer-events:none;
+}
+
+.card{
+    padding:0 10px;
+    display:inline-block;
+    margin:1rem 0;
+}
+
+a:focus,a:active, button:focus, button:active {
+    outline: none !important;
+}
+
+.btn{
+    padding:0.4rem 4rem;
+    border:none !important;
+}
+
+.btn-custom {
+    color: #FFFFFF;
+    background-color: #8219CE;
+    border-color: #8219CE;
+	width: 100%;
+}
+
+a i small{
+    font-family:'Roboto', Arial, sans-serif;
+    margin:0 5px;
+}
+
+.page-footer h6{
+    font-weight:100;
+}
+
+div .iifr{
+    display:none;
+}
+
+@keyframes scroll{
+    0%, 100%{opacity:0.5;top:89%;}
+    50%{opacity:1;top:90%;}
+}
+
+@media (max-width:552px){
+    .landing .text-area{
+        display:block;
+        width:100%;
+        left:0;
+        text-align:center;
+    }
+    .landing .text-area .title{
+        font-size:3rem;
+        margin-bottom:2.5rem;
+    }
+    .landing .text-area .sub{
+        font-size:1.5rem;
+    }
+    .landing .scroll i{
+        font-size:2rem;
+    }
+    .products .title-holder{
+        display:block;
+        width:100%;
+        text-align:center;
+        left:0;
+        margin-left:0;
+        margin-right:0;
+        left:15%;
+    }
+    .products{
+        padding:0;
+        overflow-x:hidden;
+    }
+    .products .title-holder .title{
+        display:block;
+        width:100%;
+        text-align:center !important;
+        left:0;
+        margin-left:0;
+    }
+    .products .title-holder .title::after{
+        left:-9.25ch;
+        top:10px;
+    }
+    .products .card-container{
+        overflow-x:hidden;
+    }
+}
+
+@media (max-width:309px){
+    .products .title-holder{
+        line-height:1;
+        left:0;
+    }
+    .products .title-holder .title::after{
+        left:0;
+        top:-10px;
+    }
+}
+
+::selection{
+    color:white;
+    background-color:rgba(153, 4, 123, 0.5);
+}
+.btn-custom { 
+  color: #FFFFFF; 
+  background-color: #8219CE; 
+  border-color: #8219CE; 
+} 
+ 
+.btn-custom:hover, 
+.btn-custom:focus, 
+.btn-custom:active, 
+.btn-custom.active, 
+.open .dropdown-toggle.btn-custom { 
+  color: #FFFFFF; 
+  background-color: #58277A; 
+  border-color: #8219CE; 
+} 
+ 
+.btn-custom:active, 
+.btn-custom.active, 
+.open .dropdown-toggle.btn-custom { 
+  background-image: none; 
+} 
+ 
+.btn-custom.disabled, 
+.btn-custom[disabled], 
+fieldset[disabled] .btn-custom, 
+.btn-custom.disabled:hover, 
+.btn-custom[disabled]:hover, 
+fieldset[disabled] .btn-custom:hover, 
+.btn-custom.disabled:focus, 
+.btn-custom[disabled]:focus, 
+fieldset[disabled] .btn-custom:focus, 
+.btn-custom.disabled:active, 
+.btn-custom[disabled]:active, 
+fieldset[disabled] .btn-custom:active, 
+.btn-custom.disabled.active, 
+.btn-custom[disabled].active, 
+fieldset[disabled] .btn-custom.active { 
+  background-color: #8219CE; 
+  border-color: #8219CE; 
+} 
+ 
+.btn-custom .badge { 
+  color: #8219CE; 
+  background-color: #FFFFFF; 
+}
